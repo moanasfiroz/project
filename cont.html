@@ -1,0 +1,235 @@
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body { background-image:linear-gradient(120deg,grey,slateblue,cadetblue,gray); } 
+
+	*
+	{margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+	 font-family: Adobe Gothic Std;
+	}
+	.contact
+	{position: relative;
+	 min-height: 100vh;
+	 padding: 50px 100px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;	
+	}
+	.contact .content 
+	{
+		max-width: 800px;
+		text-align: center;
+	}
+	.contact .content h2 
+	{
+		font-size: 36px;
+		font-weight: 500;
+		color: black;
+	}
+    .contact .content p
+    {
+    	font-weight: 300;
+    	color: #fff;
+    }
+    .container
+    {
+    	width: 100%;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	margin-top: 30px;
+    }
+    .container .contactInfo
+    {
+    	width: 50%;
+    	display: flex;
+    	flex-direction: column;
+    }
+    .container .contactInfo .box
+    {
+    	position: relative;
+    	padding: 20px 0;
+    	display: flex;
+    }
+    .container .contactInfo .box .icon
+    {
+    	min-width: 60px;
+    	height: 60px;
+    	background: #fff;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	border-radius: 50%;
+    	font-size: 22px;
+    }
+    .container .contactInfo .box .text
+    {
+    	display: flex;
+    	margin-left: 20px;
+    	font-size: 16px;
+    	color: #fff;
+    	flex-direction: column;
+    	font-weight: 300;
+    }
+    .container .contactInfo .box .text h3
+    {
+    	font-weight: 500;
+    	color: turquoise;
+    }
+    .BookingForm
+    {
+    	width: 40%;
+    	padding: 40px;
+    	background: thistle;
+    }
+    .BookingForm h2
+    {
+    	font-size: 30px;
+    	color: #333;
+    	font-weight: 500;
+    }
+    .BookingForm .inputBox
+    {
+       position: relative;
+       width: 100%;
+       margin-top: 10px;
+    }
+    .BookingForm .inputBox input,
+    .BookingForm .inputBox textarea
+    {
+    	width: 100%;
+    	padding: 5px 0;
+    	font-size: 16px;
+    	margin: 10px 0;
+    	border: none;
+    	background-color: thistle; 
+    	border-bottom: 2px solid #333;
+    	outline: none;
+    	resize: none; 
+    }
+    .BookingForm .inputBox span
+    {
+    	position: absolute;
+    	left: 0;
+    	padding: 5px 0;
+    	font-size: 16px;
+    	margin: 10px 0;
+    	pointer-events: none;
+    	transition: 0.5s;
+    	color: #666;
+    }
+    .BookingForm .inputBox input:focus ~ span,
+    .BookingForm .inputBox input:valid ~ span,
+    .BookingForm .inputBox textarea:focus ~ span,
+    .BookingForm .inputBox textarea:valid ~ span
+    {
+    	color: indigo;
+    	font-size: 12px;
+    	transform: translateY(-20px);
+    }
+    .BookingForm .inputBox input[type="submit"]
+    {
+    	width: 100px;
+    	background-color: indigo;
+    	color: #fff;
+    	border: none;
+    	cursor: pointer;
+    	padding: 10px;
+    	font-size: 18px;
+    }
+    @media (max-width: 991px)
+    {
+    	.contact
+    	{
+    		padding: 50px;
+    	}
+    	.container
+    	{
+    		flex-direction: column;
+    	}
+    	.container .contactInfo
+    	{
+    		margin-bottom: 40px
+    	}
+    	.container .contactInfo,
+    	.BookingForm
+    	{
+    		width: 100%;
+    	}
+    	
+    }
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+	<section class="contact">
+		<div class="content">
+			<h2><u> CONTACT US </u></h2>
+			<p>Got a question? Okay Find The Solution ! You can use this section to find the best way to contact us for the help you need.</p>
+		</div>
+		<div class="container">
+			<div class="contactInfo">
+				<div class="box">
+					<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+					<div class="text">
+						<h3>Address</h3>
+						<p>391/1 Bala Compound,<br> Behind Al-Saba Clinic, 4th Nizampura,<br> Bhiwandi, Dist.Thane.</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p>+91 93263-10153</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+					<div class="text">
+						<h3>Email</h3>
+						<p>happy.journey83@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="BookingForm">
+				<form method="post" action="attach.php">
+					<h2>BOOK NOW</h2>
+					<div class="inputBox">
+						<input type="text" name="name" required="required">
+						<span>Name</span>
+					</div>
+					<div class="inputBox">
+						<input type="text" name="contact" required="required">
+						<span>Contact</span>
+					</div>
+					<div class="inputBox">
+						<input type="text" name="email" required="required">
+						<span>Email</span>
+					</div>
+					<div class="inputBox">
+						
+						<input type="text" name="message" placeholder="Type your Message....">
+						
+						
+					</div>
+					<div class="inputBox">
+						<input type="submit" name="submit" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
